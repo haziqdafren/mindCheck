@@ -614,7 +614,6 @@ This project is developed as a final year capstone project for Politeknik Caltex
 
 If you or someone you know is experiencing a mental health crisis:
 
-- **Indonesia Crisis Hotline:** 119 ext 8 (24/7)
 - **International Association for Suicide Prevention:** [iasp.info](https://www.iasp.info/resources/Crisis_Centres/)
 - **Campus Counseling Services** — Contact your university's student affairs office
 
