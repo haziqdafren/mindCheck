@@ -170,6 +170,10 @@ User Input (10 factors)
 
 ## Machine Learning Model
 
+### Training Notebook & Documentation
+- **ML Training Notebook:** [`ml_training.ipynb`](ml_training.ipynb) — Complete model training pipeline
+- **Full Technical Report:** [`docs/K1_Laporan_ML.pdf`](docs/K1_Laporan_ML.pdf) — Comprehensive ML documentation (Bahasa Indonesia)
+
 ### Dataset & Training
 - **Source:** Student Mental Health Assessment Dataset (Kaggle)
 - **Training Data:** 502 samples (401 train / 101 test)
@@ -421,9 +425,13 @@ mindcheck/
 │   ├── requirements.txt                    # Python dependencies
 │   └── SETUP_INSTRUCTIONS.md               # Setup guide
 │
+├── docs/                                   # Documentation
+│   └── K1_Laporan_ML.pdf                   # ML technical report (Bahasa Indonesia)
+│
 ├── video-demo/                             # Application demo video
 │
-├── model_testing_colab.ipynb               # ML training notebook
+├── ml_training.ipynb                       # Complete ML training pipeline
+├── model_testing_colab.ipynb               # ML model testing notebook
 ├── .gitignore                              # Git ignore rules
 ├── build.gradle.kts                        # Project-level Gradle
 ├── settings.gradle.kts                     # Gradle settings
