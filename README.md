@@ -537,7 +537,7 @@ Content-Type: application/json
 
 ## Demo Video
 
-**[Watch Demo Video on Google Drive](https://drive.google.com/file/d/YOUR_FILE_ID/view)**
+**[Watch Demo Video on Google Drive](https://drive.google.com/file/d/1fApwuRyQ04DbhqrmDD108jNEBfLdfMn0/view)**
 
 The demonstration video showcases:
 - Complete user onboarding flow
@@ -549,8 +549,6 @@ The demonstration video showcases:
 - Emergency support features (breathing exercises, grounding techniques)
 - Analytics dashboard and progress visualization
 - Profile management and settings
-
-*Note: Replace `YOUR_FILE_ID` with your actual Google Drive file ID after uploading the video.*
 
 ---
 
