@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Premium Mood Tracker - Keep gradient_onboarding background -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_onboarding"
+    android:fillViewport="true"
+    android:clipToPadding="false"
+    android:paddingBottom="100dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_l">
+
+        <!-- Title - Premium Typography -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mood Tracker"
+            android:textColor="#B4D96C"
+            android:textSize="@dimen/text_headline"
+            android:fontFamily="sans-serif-light"
+            android:letterSpacing="-0.02" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:text="Bagaimana perasaan kamu hari ini?"
+            android:textColor="#B3FFFFFF"
+            android:alpha="0.8"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/text_body" />
+
+        <!-- Helpful Guidance Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_m"
+            android:background="@drawable/bg_card_glass_simple"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="@dimen/radius_m"
+            app:cardElevation="0dp"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_card_glass_simple"
+                android:padding="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="💡"
+                    android:textSize="20sp"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tracking mood membantu memahami pola perasaan kamu"
+                    android:textColor="#B3FFFFFF"
+                    android:fontFamily="sans-serif"
+                    android:textSize="12sp"
+                    android:lineSpacingMultiplier="1.3" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Mood Selector - Premium Glass Card Container -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_l"
+            android:background="@drawable/bg_card_glass_simple"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="@dimen/radius_l"
+            app:cardElevation="0dp"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card_glass_simple"
+                android:padding="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- Very Low -->
+                <LinearLayout
+                    android:id="@+id/btn_mood_very_low"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="4dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_mood_very_low"
+                        android:contentDescription="Very Low Mood"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Sangat\nRendah"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:fontFamily="sans-serif"
+                        android:textSize="10sp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:maxLines="2" />
+                </LinearLayout>
+
+                <!-- Low -->
+                <LinearLayout
+                    android:id="@+id/btn_mood_low"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="4dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_mood_low"
+                        android:contentDescription="Low Mood"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Rendah"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:fontFamily="sans-serif"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <!-- Normal -->
+                <LinearLayout
+                    android:id="@+id/btn_mood_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="4dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_mood_normal"
+                        android:contentDescription="Normal Mood"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Biasa"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:fontFamily="sans-serif"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <!-- Good -->
+                <LinearLayout
+                    android:id="@+id/btn_mood_good"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="4dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_mood_good"
+                        android:contentDescription="Good Mood"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Baik"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:fontFamily="sans-serif"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <!-- Very Good -->
+                <LinearLayout
+                    android:id="@+id/btn_mood_very_good"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="4dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_mood_very_good"
+                        android:contentDescription="Very Good Mood"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Sangat\nBaik"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:fontFamily="sans-serif"
+                        android:textSize="10sp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:maxLines="2" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Notes Input - Premium Glass Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_l"
+            android:background="@drawable/bg_card_glass_simple"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="@dimen/radius_l"
+            app:cardElevation="0dp"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card_glass_simple"
+                android:padding="@dimen/card_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Catatan (opsional)"
+                    android:textColor="#B4D96C"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="13sp"
+                    android:alpha="0.9" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Contoh: &quot;Hari ini aku merasa bahagia karena...&quot;"
+                    android:textColor="#80FFFFFF"
+                    android:fontFamily="sans-serif"
+                    android:textSize="11sp"
+                    android:textStyle="italic" />
+
+                <EditText
+                    android:id="@+id/et_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:hint="Tulis catatan tentang perasaanmu..."
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:maxLength="500"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/seafoamGreen"
+                    android:fontFamily="sans-serif"
+                    android:textSize="@dimen/text_body"
+                    android:background="@null"
+                    android:paddingTop="@dimen/spacing_s" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Triggers Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_l"
+            android:text="Apa yang mempengaruhi mood kamu?"
+            android:textColor="#B4D96C"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Pilih faktor yang mempengaruhi perasaan hari ini (opsional)"
+            android:textColor="#80FFFFFF"
+            android:fontFamily="sans-serif"
+            android:textSize="12sp" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_group_triggers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_s"
+            app:chipSpacingHorizontal="@dimen/spacing_xs"
+            app:chipSpacingVertical="@dimen/spacing_xxs"
+            app:singleSelection="false" />
+
+        <!-- Save Button - Premium Pill -->
+        <Button
+            android:id="@+id/btn_save_mood"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height_large"
+            android:layout_marginTop="@dimen/spacing_l"
+            android:background="@drawable/bg_button_pill_primary"
+            android:enabled="false"
+            android:text="Simpan Mood"
+            android:textColor="@color/darkBackground"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="16sp"
+            android:elevation="0dp" />
+
+        <!-- Divider - Soft -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/spacing_xl"
+            android:background="@color/glassStroke" />
+
+        <!-- History Section -->
+        <TextView
+            android:id="@+id/tv_mood_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_l"
+            android:text="Riwayat Mood"
+            android:textColor="#B4D96C"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_week_average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:text="Rata-rata minggu ini: Baik"
+            android:textColor="#B3FFFFFF"
+            android:alpha="0.8"
+            android:fontFamily="sans-serif"
+            android:textSize="15sp" />
+
+        <!-- Recent Mood Entries - Premium Glass -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_mood_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_m"
+            android:layout_marginBottom="@dimen/spacing_l"
+            android:background="@drawable/bg_card_glass_simple"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="@dimen/radius_l"
+            app:cardElevation="0dp"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card_glass_simple"
+                android:padding="@dimen/card_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Catatan Terakhir"
+                    android:textColor="#B4D96C"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_mood_entries"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_s"
+                    android:text="Belum ada catatan"
+                    android:textColor="@color/white"
+                    android:fontFamily="sans-serif"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="6dp" />
+
+                <!-- Empty State -->
+                <include
+                    android:id="@+id/empty_mood_state"
+                    layout="@layout/view_empty_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

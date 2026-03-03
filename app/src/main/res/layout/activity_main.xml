@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout Activity Utama dengan Bottom Navigation Bar -->
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Container untuk fragment (Home, Mood, Journal, Goals, Profile) -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Bottom Navigation Bar dengan 5 tombol menu -->
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_bottom_nav_ios"
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingHorizontal="12dp">
+
+        <!-- Tombol Mood -->
+        <ImageButton
+            android:id="@+id/btn_nav_mood"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_mood"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Mood"
+            android:scaleType="fitCenter"
+            android:padding="8dp"
+            app:tint="@color/white" />
+
+        <!-- Tombol Journal -->
+        <ImageButton
+            android:id="@+id/btn_nav_journal"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_journal"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Journal"
+            android:scaleType="fitCenter"
+            android:padding="8dp"
+            app:tint="@color/white" />
+
+        <!-- Tombol Home -->
+        <ImageButton
+            android:id="@+id/btn_nav_home"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_home"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Home"
+            android:scaleType="fitCenter"
+            android:padding="8dp"
+            app:tint="#B4D96C" />
+
+        <!-- Tombol Goals -->
+        <ImageButton
+            android:id="@+id/btn_nav_goals"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_target"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Goals"
+            android:scaleType="fitCenter"
+            android:padding="8dp"
+            app:tint="@color/white" />
+
+        <!-- Tombol Profile -->
+        <ImageButton
+            android:id="@+id/btn_nav_profile"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_profile"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Profile"
+            android:scaleType="fitCenter"
+            android:padding="8dp"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+    <!-- Tombol Darurat (Emergency) - Floating Action Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_emergency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="88dp"
+        android:contentDescription="Bantuan Darurat"
+        android:src="@drawable/ic_emergency"
+        app:backgroundTint="@color/errorRed"
+        app:tint="@color/white"
+        app:elevation="6dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

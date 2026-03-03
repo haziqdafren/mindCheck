@@ -1,0 +1,40 @@
+# Android Studio
+*.iml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+app/build/
+
+# Python
+flask-api/venv/
+flask-api/__pycache__/
+flask-api/*.pyc
+flask-api/.pytest_cache/
+*.log
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Secrets (DO NOT COMMIT)
+google-services.json
+*.env
+credentials.json
+
+# Video files (too large for git)
+video-demo/*.mp4
+video-demo/*.mov
+video-demo/*.avi

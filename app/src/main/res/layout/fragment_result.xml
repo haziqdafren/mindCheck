@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_onboarding"
+    android:padding="24dp">
+
+    <!-- Scrollable Content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="32dp">
+
+            <!-- Result Icon -->
+            <ImageView
+                android:id="@+id/ivResultIcon"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/ic_success_sparkle"
+                android:tint="@color/white"
+                android:layout_gravity="start"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Result Title -->
+            <TextView
+                android:id="@+id/tvResultTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tidak Ada\nDepresi"
+                android:textSize="42sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_extralight"
+                android:letterSpacing="-0.02"
+                android:lineSpacingExtra="6dp"
+                android:gravity="start"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Risk Level & Confidence Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="24dp">
+
+                <!-- Risk Level Badge -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_card_glass_simple"
+                    android:padding="16dp"
+                    android:layout_marginEnd="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Terdeteksi Depresi"
+                        android:textSize="11sp"
+                        android:textColor="#99FFFFFF"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_marginBottom="6dp" />
+
+                    <TextView
+                        android:id="@+id/tvRiskLevel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rendah"
+                        android:textSize="20sp"
+                        android:textColor="#B4D96C"
+                        android:fontFamily="@font/poppins_medium" />
+                </LinearLayout>
+
+                <!-- Confidence Badge -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_card_glass_simple"
+                    android:padding="16dp"
+                    android:layout_marginStart="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Akurasi"
+                        android:textSize="11sp"
+                        android:textColor="#99FFFFFF"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_marginBottom="6dp" />
+
+                    <TextView
+                        android:id="@+id/tvConfidence"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="85%"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins_medium" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Advice Section Header -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rekomendasi untuk kamu"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Advice Items Container -->
+            <LinearLayout
+                android:id="@+id/adviceContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="24dp">
+
+                <!-- Advice items will be added dynamically -->
+            </LinearLayout>
+
+            <!-- Disclaimer -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card_glass_simple"
+                android:padding="18dp"
+                android:layout_marginBottom="24dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/ic_info_circle"
+                        android:tint="@color/white"
+                        android:layout_marginEnd="8dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Catatan Penting"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins_medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hasil screening ini bukan diagnosis medis. Untuk evaluasi lengkap, konsultasikan dengan profesional kesehatan mental."
+                    android:textSize="13sp"
+                    android:textColor="#B3FFFFFF"
+                    android:fontFamily="@font/poppins_regular"
+                    android:lineSpacingMultiplier="1.4" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp">
+
+        <!-- Action Buttons Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Back to Home -->
+            <TextView
+                android:id="@+id/btnHome"
+                android:layout_width="0dp"
+                android:layout_height="58dp"
+                android:layout_weight="1.2"
+                android:text="Kembali"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:background="@drawable/bg_glass_button_dark"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginEnd="12dp" />
+
+            <!-- Retake Screening -->
+            <TextView
+                android:id="@+id/btnRetake"
+                android:layout_width="0dp"
+                android:layout_height="58dp"
+                android:layout_weight="1"
+                android:text="Ulangi ↻"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:background="@drawable/bg_glass_button_dark"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginStart="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

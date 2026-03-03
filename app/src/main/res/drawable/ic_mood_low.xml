@@ -1,0 +1,23 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+    <!-- Sad face - larger viewport -->
+    <!-- Face circle -->
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M32,4C16.5,4 4,16.5 4,32s12.5,28 28,28s28,-12.5 28,-28S47.5,4 32,4zM32,56C18.7,56 8,45.3 8,32S18.7,8 32,8s24,10.7 24,24S45.3,56 32,56z"/>
+    <!-- Left eye -->
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M20,26m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0"/>
+    <!-- Right eye -->
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M44,26m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0"/>
+    <!-- Slight frown -->
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M42,42H22c0,5.5 4.5,10 10,10S42,47.5 42,42z"/>
+</vector>

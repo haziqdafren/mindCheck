@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Disable automatic Firebase Analytics initialization to improve startup time -->
+    <!-- Analytics will be manually initialized when needed -->
+    <bool name="firebase_analytics_collection_deactivated">true</bool>
+
+    <!-- Enable automatic Analytics data collection in production builds -->
+    <!-- Set to false in debug builds for testing -->
+    <bool name="google_analytics_automatic_screen_reporting_enabled">false</bool>
+
+    <!-- Firebase App Check - Disable for development/testing -->
+    <!-- Enable in production builds for security -->
+    <bool name="firebase_app_check_enforce">false</bool>
+</resources>

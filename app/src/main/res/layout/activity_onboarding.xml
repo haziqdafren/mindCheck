@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Premium Onboarding Container - Organic Design -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_onboarding"
+    tools:context=".presentation.onboarding.OnboardingActivity">
+
+    <!-- Skip Button (Top Right) - Premium Subtle Style -->
+    <TextView
+        android:id="@+id/btnSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lewati"
+        android:textColor="#B3FFFFFF"
+        android:alpha="0.8"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-medium"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/spacing_s"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/spacing_m"
+        android:layout_marginEnd="@dimen/spacing_l" />
+
+    <!-- ViewPager2 for Onboarding Screens -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/btnSkip"
+        app:layout_constraintBottom_toTopOf="@id/pageIndicator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Page Indicator (Dots) -->
+    <LinearLayout
+        android:id="@+id/pageIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="140dp">
+
+        <!-- Dots will be added programmatically -->
+    </LinearLayout>
+
+    <!-- This activity just hosts fragments - buttons are in each fragment -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

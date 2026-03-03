@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Reusable Empty State View -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="48dp">
+
+    <!-- Icon -->
+    <ImageView
+        android:id="@+id/iv_empty_icon"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/ic_mood"
+        android:alpha="0.3"
+        app:tint="@color/white"
+        android:contentDescription="Empty Icon" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tv_empty_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Belum Ada Data"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:fontFamily="@font/poppins_medium"
+        android:textAlignment="center" />
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/tv_empty_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Mulai tambahkan data pertama kamu!"
+        android:textColor="#B3FFFFFF"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_regular"
+        android:textAlignment="center"
+        android:lineSpacingMultiplier="1.4"
+        android:maxWidth="280dp" />
+
+    <!-- CTA Button -->
+    <Button
+        android:id="@+id/btn_empty_action"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:text="Mulai Sekarang"
+        android:textColor="@color/darkBackground"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_medium"
+        android:background="@drawable/bg_button_pill_primary"
+        android:elevation="0dp" />
+
+</LinearLayout>

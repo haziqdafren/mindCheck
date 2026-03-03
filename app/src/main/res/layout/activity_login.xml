@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Premium Login Screen - Organic Design with Glassmorphism -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_onboarding"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_l">
+
+        <!-- Logo with soft glow -->
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/ic_lotus_minimal"
+            android:contentDescription="MindCheck Logo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/spacing_xxl"
+            android:alpha="0.95" />
+
+        <!-- Welcome Text - Soft, Premium -->
+        <TextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat Datang Kembali"
+            android:textSize="@dimen/text_headline"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"
+            android:letterSpacing="-0.02"
+            app:layout_constraintTop_toBottomOf="@id/iv_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/spacing_l" />
+
+        <TextView
+            android:id="@+id/tv_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lanjutkan perjalanan kesehatan mental Anda"
+            android:textSize="@dimen/text_body_small"
+            android:textColor="#B3FFFFFF"
+            android:alpha="0.8"
+            android:fontFamily="sans-serif"
+            app:layout_constraintTop_toBottomOf="@id/tv_welcome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/spacing_xs" />
+
+        <!-- Email Input - Premium Glassmorphism Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xxl"
+            android:background="@drawable/bg_card_glass_simple"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="@dimen/radius_l"
+            app:cardElevation="0dp"
+            app:strokeWidth="0dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_subtitle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card_glass_simple"
+                android:padding="@dimen/card_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="@color/white"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="13sp"
+                    android:alpha="0.9" />
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="nama@email.com"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/seafoamGreen"
+                    android:fontFamily="sans-serif"
+                    android:textSize="@dimen/text_body"
+                    android:background="@null"
+                    android:paddingTop="@dimen/spacing_s" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Password Input - Premium Glassmorphism Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_m"
+            android:background="@drawable/bg_card_glass_simple"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="@dimen/radius_l"
+            app:cardElevation="0dp"
+            app:strokeWidth="0dp"
+            app:layout_constraintTop_toBottomOf="@id/card_email">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card_glass_simple"
+                android:padding="@dimen/card_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textColor="#99FFFFFF"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="13sp"
+                    android:alpha="0.9" />
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Masukkan password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/seafoamGreen"
+                    android:fontFamily="sans-serif"
+                    android:textSize="@dimen/text_body"
+                    android:background="@null"
+                    android:paddingTop="@dimen/spacing_s" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Error Message -->
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/errorRed"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/text_caption"
+            android:visibility="gone"
+            android:alpha="0.9"
+            app:layout_constraintTop_toBottomOf="@id/card_password"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/spacing_s" />
+
+        <!-- Login Button - Premium Pill Shape -->
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:text="Masuk"
+            android:textSize="@dimen/text_body"
+            android:textColor="@color/darkBackground"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.02"
+            android:background="@drawable/bg_button_pill_primary"
+            android:elevation="0dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_error"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/spacing_xl" />
+
+        <!-- Register Link -->
+        <LinearLayout
+            android:id="@+id/layout_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/btn_login"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/spacing_l">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belum punya akun? "
+                android:textColor="#B3FFFFFF"
+                android:alpha="0.7"
+                android:fontFamily="sans-serif"
+                android:textSize="@dimen/text_body_small" />
+
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daftar"
+                android:textColor="#99FFFFFF"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="@dimen/text_body_small" />
+        </LinearLayout>
+
+        <!-- Divider - Soft & Subtle -->
+        <LinearLayout
+            android:id="@+id/divider_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/layout_register"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/spacing_xl">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/glassStroke" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="atau"
+                android:textColor="#B3FFFFFF"
+                android:alpha="0.6"
+                android:fontFamily="sans-serif"
+                android:textSize="12sp"
+                android:paddingHorizontal="@dimen/spacing_m" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/glassStroke" />
+        </LinearLayout>
+
+        <!-- Guest Mode Button - Subtle Outlined Pill -->
+        <Button
+            android:id="@+id/btn_guest"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:text="Lanjutkan sebagai Tamu"
+            android:textSize="@dimen/text_body"
+            android:textColor="#99FFFFFF"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.02"
+            android:background="@drawable/bg_button_pill_secondary"
+            android:elevation="0dp"
+            app:layout_constraintTop_toBottomOf="@id/divider_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/spacing_l" />
+
+        <!-- Guest Mode Info - Gentle Reminder -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Data akan disimpan sementara di perangkat"
+            android:textColor="#B3FFFFFF"
+            android:alpha="0.5"
+            android:fontFamily="sans-serif"
+            android:textSize="11sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/btn_guest"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/spacing_s"
+            android:layout_marginBottom="@dimen/spacing_l" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,73 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- MindCheck - Clean modern brain with checkmark -->
+    <group
+        android:translateX="54"
+        android:translateY="54">
+
+        <!-- Brain outline - simplified modern design -->
+        <path
+            android:fillColor="#B4D96C"
+            android:pathData="M-16,-20 Q-24,-20 -28,-14 Q-30,-10 -30,-4 Q-30,2 -28,8 Q-26,14 -20,18 Q-14,22 -6,20 L-6,14 Q-8,10 -8,4 Q-8,-2 -6,-8 L-6,-18 Q-10,-22 -16,-20 Z
+                           M16,-20 Q24,-20 28,-14 Q30,-10 30,-4 Q30,2 28,8 Q26,14 20,18 Q14,22 6,20 L6,14 Q8,10 8,4 Q8,-2 6,-8 L6,-18 Q10,-22 16,-20 Z
+                           M-6,-18 L-6,20 L6,20 L6,-18 Z"/>
+
+        <!-- Brain details/folds - left side -->
+        <path
+            android:strokeWidth="2"
+            android:strokeColor="#2A5D3F"
+            android:fillColor="@android:color/transparent"
+            android:strokeLineCap="round"
+            android:pathData="M-20,-8 Q-16,-10 -12,-8"/>
+
+        <path
+            android:strokeWidth="2"
+            android:strokeColor="#2A5D3F"
+            android:fillColor="@android:color/transparent"
+            android:strokeLineCap="round"
+            android:pathData="M-22,2 Q-18,0 -14,2"/>
+
+        <path
+            android:strokeWidth="2"
+            android:strokeColor="#2A5D3F"
+            android:fillColor="@android:color/transparent"
+            android:strokeLineCap="round"
+            android:pathData="M-20,12 Q-16,10 -12,12"/>
+
+        <!-- Brain details/folds - right side -->
+        <path
+            android:strokeWidth="2"
+            android:strokeColor="#2A5D3F"
+            android:fillColor="@android:color/transparent"
+            android:strokeLineCap="round"
+            android:pathData="M20,-8 Q16,-10 12,-8"/>
+
+        <path
+            android:strokeWidth="2"
+            android:strokeColor="#2A5D3F"
+            android:fillColor="@android:color/transparent"
+            android:strokeLineCap="round"
+            android:pathData="M22,2 Q18,0 14,2"/>
+
+        <path
+            android:strokeWidth="2"
+            android:strokeColor="#2A5D3F"
+            android:fillColor="@android:color/transparent"
+            android:strokeLineCap="round"
+            android:pathData="M20,12 Q16,10 12,12"/>
+
+        <!-- Mental wellness checkmark overlay -->
+        <path
+            android:strokeWidth="4"
+            android:strokeColor="#FFFFFF"
+            android:fillColor="@android:color/transparent"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"
+            android:pathData="M-8,-2 L-2,4 L10,-8"/>
+
+    </group>
+</vector>

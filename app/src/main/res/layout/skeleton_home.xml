@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_onboarding"
+    android:fillViewport="true"
+    android:alpha="0.7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_l">
+
+        <!-- Greeting Skeleton -->
+        <View
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/shimmer_placeholder" />
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="@dimen/spacing_s"
+            android:background="@drawable/shimmer_placeholder" />
+
+        <!-- Last Screening Card Skeleton -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_l"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card_glass_simple"
+                android:padding="20dp">
+
+                <View
+                    android:layout_width="180dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/shimmer_placeholder" />
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="18dp"
+                    android:layout_marginTop="@dimen/spacing_m"
+                    android:background="@drawable/shimmer_placeholder" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Activity Section Title -->
+        <View
+            android:layout_width="180dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="@dimen/spacing_xl"
+            android:background="@drawable/shimmer_placeholder" />
+
+        <!-- Activity Cards Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_m"
+            android:orientation="horizontal">
+
+            <!-- Mood Card Skeleton -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/card_height_small"
+                android:layout_marginEnd="@dimen/spacing_s"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_card_glass_simple"
+                    android:padding="@dimen/spacing_m">
+
+                    <View
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/shimmer_placeholder" />
+
+                    <View
+                        android:layout_width="80dp"
+                        android:layout_height="16dp"
+                        android:layout_marginTop="@dimen/spacing_s"
+                        android:background="@drawable/shimmer_placeholder" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Sleep Card Skeleton -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/card_height_small"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_card_glass_simple"
+                    android:padding="@dimen/spacing_m">
+
+                    <View
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/shimmer_placeholder" />
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="16dp"
+                        android:layout_marginTop="@dimen/spacing_s"
+                        android:background="@drawable/shimmer_placeholder" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <!-- Mental Health Section Title -->
+        <View
+            android:layout_width="200dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="@dimen/spacing_xl"
+            android:background="@drawable/shimmer_placeholder" />
+
+        <!-- AI Screening Card Skeleton -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_m"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/gradient_card_featured"
+                android:padding="@dimen/spacing_l">
+
+                <View
+                    android:layout_width="220dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/shimmer_placeholder" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="@dimen/spacing_m"
+                    android:background="@drawable/shimmer_placeholder" />
+
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="@dimen/spacing_m"
+                    android:background="@drawable/shimmer_placeholder" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Streak Card Skeleton -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_l"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_card_glass_simple" />
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

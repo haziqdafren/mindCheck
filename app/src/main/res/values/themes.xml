@@ -1,0 +1,183 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Light Theme - Modern & Clean -->
+    <style name="Base.Theme.MindCheck.Light" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/primaryGreen</item>
+        <item name="colorPrimaryVariant">@color/primaryTeal</item>
+        <item name="colorOnPrimary">@color/textOnPrimary</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/accentLime</item>
+        <item name="colorSecondaryVariant">@color/emeraldGreen</item>
+        <item name="colorOnSecondary">@color/textPrimary</item>
+
+        <!-- Status bar - Transparent for immersive feel -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Background color -->
+        <item name="android:colorBackground">@color/backgroundLight</item>
+        <item name="colorSurface">@color/cardBackground</item>
+
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textSecondary</item>
+    </style>
+
+    <!-- Dark Theme - Calm & Zen Atmosphere -->
+    <style name="Base.Theme.MindCheck.Dark" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary brand color - Soft mint green for dark mode -->
+        <item name="colorPrimary">#B4D96C</item>
+        <item name="colorPrimaryVariant">@color/emeraldGreen</item>
+        <item name="colorOnPrimary">@color/darkBackground</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">#B4D96C</item>
+        <item name="colorSecondaryVariant">@color/seafoamGreen</item>
+        <item name="colorOnSecondary">@color/darkBackground</item>
+
+        <!-- Status bar - Deep dark for immersion -->
+        <item name="android:statusBarColor">@color/darkBackground</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/darkBackground</item>
+
+        <!-- Background colors - Dark & calming -->
+        <item name="android:colorBackground">@color/backgroundDark</item>
+        <item name="colorSurface">@color/darkSurface</item>
+
+        <!-- Text colors - High contrast for readability -->
+        <item name="android:textColorPrimary">@color/textPrimaryDark</item>
+        <item name="android:textColorSecondary">@color/textSecondaryDark</item>
+
+        <!-- Elevated surfaces for depth -->
+        <item name="elevationOverlayEnabled">true</item>
+    </style>
+
+    <!-- Default theme - using Dark mode for modern feel -->
+    <style name="Base.Theme.MindCheck" parent="Base.Theme.MindCheck.Dark" />
+    <style name="Theme.MindCheck" parent="Base.Theme.MindCheck" />
+
+    <!-- Button Styles - iOS-inspired Premium Design -->
+    <style name="Widget.MindCheck.Button.Primary" parent="Widget.Material3.Button">
+        <item name="backgroundTint">#B4D96C</item>
+        <item name="android:textColor">@color/darkBackground</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <style name="Widget.MindCheck.Button.Secondary" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">#B4D96C</item>
+        <item name="strokeWidth">1.5dp</item>
+        <item name="android:textColor">#B4D96C</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <style name="Widget.MindCheck.Button.Accent" parent="Widget.Material3.Button">
+        <item name="backgroundTint">#B4D96C</item>
+        <item name="android:textColor">@color/darkBackground</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <!-- Card Styles - Glassmorphism with Modern Aesthetics -->
+    <style name="Widget.MindCheck.CardView" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">20dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardBackgroundColor">@color/cardBackgroundDark</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/borderDark</item>
+    </style>
+
+    <style name="Widget.MindCheck.CardView.Featured" parent="Widget.MindCheck.CardView">
+        <item name="cardCornerRadius">24dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardBackgroundColor">@color/cardBackgroundDarkElevated</item>
+    </style>
+
+    <style name="Widget.MindCheck.CardView.Glass" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">20dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardBackgroundColor">@color/glassDark</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/glassStroke</item>
+    </style>
+
+    <!-- iOS-inspired Typography - Clean, Modern, Premium -->
+    <style name="TextAppearance.MindCheck.Display" parent="TextAppearance.Material3.DisplayMedium">
+        <item name="android:textSize">40sp</item>
+        <item name="fontFamily">sans-serif-light</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">@color/textPrimaryDark</item>
+    </style>
+
+    <style name="TextAppearance.MindCheck.Headline" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="android:textSize">34sp</item>
+        <item name="fontFamily">sans-serif-light</item>
+        <item name="android:letterSpacing">-0.015</item>
+        <item name="android:textColor">@color/textPrimaryDark</item>
+    </style>
+
+    <style name="TextAppearance.MindCheck.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textSize">28sp</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">@color/textPrimaryDark</item>
+    </style>
+
+    <style name="TextAppearance.MindCheck.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textSize">22sp</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/textPrimaryDark</item>
+    </style>
+
+    <style name="TextAppearance.MindCheck.Body" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textSize">17sp</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:textColor">@color/textPrimaryDark</item>
+    </style>
+
+    <style name="TextAppearance.MindCheck.BodySecondary" parent="TextAppearance.MindCheck.Body">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/textSecondaryDark</item>
+    </style>
+
+    <style name="TextAppearance.MindCheck.Caption" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textSize">13sp</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/textTertiaryDark</item>
+    </style>
+
+    <style name="TextAppearance.MindCheck.Label" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:textColor">@color/textSecondaryDark</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- Bottom Navigation Text Styles - Premium & Minimal -->
+    <style name="BottomNavTextActive" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textSize">11sp</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="BottomNavTextInactive" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textSize">11sp</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+</resources>

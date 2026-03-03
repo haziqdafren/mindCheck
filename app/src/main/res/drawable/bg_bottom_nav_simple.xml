@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Simplified floating bottom nav - better performance -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#25FFFFFF" />
+    <stroke 
+        android:width="1dp" 
+        android:color="#40FFFFFF" />
+    <corners android:radius="36dp" />
+</shape>

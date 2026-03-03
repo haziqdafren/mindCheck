@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MindCheck Logo - Brain with Heart/Care Symbol -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Brain outline - organic shape -->
+    <path
+        android:fillColor="@color/mintGreen"
+        android:pathData="M60,20
+            C45,20 35,28 32,38
+            C28,35 23,34 19,36
+            C13,39 10,46 12,53
+            C8,56 6,61 7,66
+            C8,72 13,77 19,78
+            C20,84 24,89 30,91
+            C32,97 38,101 45,101
+            C48,105 53,107 58,107
+            C62,107 67,105 70,101
+            C77,101 83,97 85,91
+            C91,89 95,84 96,78
+            C102,77 107,72 108,66
+            C109,61 107,56 103,53
+            C105,46 102,39 96,36
+            C92,34 87,35 83,38
+            C80,28 70,20 60,20 Z"/>
+
+    <!-- Brain details/folds -->
+    <path
+        android:strokeWidth="2.5"
+        android:strokeColor="#2A5D3F"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M35,45 Q40,40 48,42"/>
+
+    <path
+        android:strokeWidth="2.5"
+        android:strokeColor="#2A5D3F"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M42,55 Q50,52 58,54"/>
+
+    <path
+        android:strokeWidth="2.5"
+        android:strokeColor="#2A5D3F"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M72,42 Q80,40 85,45"/>
+
+    <path
+        android:strokeWidth="2.5"
+        android:strokeColor="#2A5D3F"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M62,54 Q70,52 78,55"/>
+
+    <!-- Center vertical line (corpus callosum) -->
+    <path
+        android:strokeWidth="2"
+        android:strokeColor="#2A5D3F"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M60,35 L60,85"/>
+
+    <!-- Heart symbol in center (care/wellness) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M60,68
+            L52,58
+            C50,56 48,55 46,56
+            C44,57 43,59 43,61
+            C43,63 44,65 46,66
+            L60,78
+            L74,66
+            C76,65 77,63 77,61
+            C77,59 76,57 74,56
+            C72,55 70,56 68,58
+            Z"/>
+</vector>

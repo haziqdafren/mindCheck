@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Number input for age and study hours -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_card_glass_simple"
+    android:padding="24dp">
+
+    <!-- Large Number Display -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <!-- Decrease Button -->
+        <TextView
+            android:id="@+id/btnDecrease"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:text="−"
+            android:textSize="32sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center"
+            android:background="@drawable/bg_glass_button_dark"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginEnd="20dp" />
+
+        <!-- Number Display -->
+        <TextView
+            android:id="@+id/tvNumberValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="20"
+            android:textSize="64sp"
+            android:textColor="#B4D96C"
+            android:fontFamily="@font/poppins_extralight"
+            android:gravity="center" />
+
+        <!-- Increase Button -->
+        <TextView
+            android:id="@+id/btnIncrease"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:text="+"
+            android:textSize="32sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center"
+            android:background="@drawable/bg_glass_button_dark"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginStart="20dp" />
+    </LinearLayout>
+
+    <!-- Optional: Direct Input Field -->
+    <EditText
+        android:id="@+id/etNumberInput"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Atau ketik langsung..."
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:textColorHint="#80FFFFFF"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:inputType="number"
+        android:background="@drawable/bg_glass_button_dark"
+        android:padding="16dp" />
+
+</LinearLayout>

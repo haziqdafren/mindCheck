@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:focusable="false"
+    android:padding="32dp">
+
+    <!-- Icon - Heart/Support -->
+    <ImageView
+        android:id="@+id/iconShield"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_heart_support"
+        android:tint="@color/white"
+        android:contentDescription="Support Icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp" />
+
+    <!-- Title - Left Aligned -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Teman yang\nselalu ada"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_extralight"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="2dp"
+        android:gravity="start"
+        app:layout_constraintTop_toBottomOf="@id/iconShield"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="MindCheck adalah teman kesehatan mental kamu. Kami memahami, mendengar, dan memberikan dukungan kapanpun kamu butuhkan."
+        android:textSize="14sp"
+        android:textColor="#B3FFFFFF"
+        android:fontFamily="@font/poppins_regular"
+        android:lineSpacingMultiplier="1.3"
+        android:gravity="start|center_vertical"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintBottom_toTopOf="@id/buttonContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Navigation Buttons -->
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="120dp">
+
+        <!-- Back Button -->
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="← Kembali"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:background="@drawable/bg_glass_button_dark"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Start Button (last page) -->
+        <TextView
+            android:id="@+id/btnStart"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="Mulai →"
+            android:textSize="15sp"
+            android:textColor="#2B3A2B"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:background="@drawable/bg_glass_button_light"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Basic Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Organic Dark Mode Palette - Meditation App Style -->
+    <color name="darkBackground">#1A2E2A</color>
+    <color name="darkSurface">#243831</color>
+    <color name="darkCard">#2A4A40</color>
+    <color name="darkElevated">#3D5A4F</color>
+
+    <!-- Soft, Muted Green Palette - Organic & Calming -->
+    <color name="mintGreen">#7FDCC4</color>
+    <color name="softLime">#B5E8A6</color>
+    <color name="emeraldGreen">#5FB598</color>
+    <color name="pastelGreen">#C8EFD4</color>
+    <color name="seafoamGreen">#A7D9C9</color>
+    <color name="sageGreen">#9FC9B5</color>
+
+    <!-- Main Brand Colors - Refreshed -->
+    <color name="primaryGreen">#6DD5B0</color>
+    <color name="primaryTeal">#4A9B8E</color>
+    <color name="accentLime">#A8E890</color>
+    <color name="darkOlive">#3D5A4F</color>
+
+    <!-- Gradient Colors - Smooth & Calming -->
+    <color name="gradientStart">#4CAF8F</color>
+    <color name="gradientMiddle">#6DD5B0</color>
+    <color name="gradientEnd">#A8E890</color>
+
+    <!-- Status Colors - Softer Tones -->
+    <color name="successGreen">#6DD5B0</color>
+    <color name="warningOrange">#FFB86C</color>
+    <color name="errorRed">#FF6B6B</color>
+    <color name="infoBlue">#5FC9F8</color>
+
+    <!-- Background Colors - Light Mode -->
+    <color name="backgroundLight">#F8FAFB</color>
+    <color name="backgroundLightSecondary">#EFF2F5</color>
+    <color name="cardBackground">#FFFFFF</color>
+    <color name="cardBackgroundLight">#FAFBFC</color>
+
+    <!-- Background Colors - Dark Mode -->
+    <color name="backgroundDark">#0F1419</color>
+    <color name="backgroundDarkSecondary">#1A1F26</color>
+    <color name="cardBackgroundDark">#252B35</color>
+    <color name="cardBackgroundDarkElevated">#2D3440</color>
+
+    <!-- Text Colors - Light Mode -->
+    <color name="textPrimary">#1A1F26</color>
+    <color name="textSecondary">#6B7280</color>
+    <color name="textTertiary">#9CA3AF</color>
+    <color name="textDisabled">#D1D5DB</color>
+    <color name="textOnPrimary">#FFFFFF</color>
+
+    <!-- Text Colors - Dark Mode -->
+    <color name="textPrimaryDark">#F9FAFB</color>
+    <color name="textSecondaryDark">#D1D5DB</color>
+    <color name="textTertiaryDark">#9CA3AF</color>
+    <color name="textDisabledDark">#4B5563</color>
+
+    <!-- Frequently Used Colors (Previously Hardcoded) -->
+    <color name="accentPrimary">#B4D96C</color>
+    <color name="textWhiteSecondary">#B3FFFFFF</color>
+    <color name="textWhiteTertiary">#80FFFFFF</color>
+    <color name="textWhiteFaint">#99FFFFFF</color>
+    <color name="textWhiteVeryLight">#E0FFFFFF</color>
+    <color name="rippleOverlay">#20FFFFFF</color>
+    <color name="darkBackgroundAlt">#2B3A2B</color>
+
+    <!-- Glassmorphism - Premium Frosted Glass -->
+    <color name="glassLight">#E6FFFFFF</color>
+    <color name="glassDark">#1AFFFFFF</color>
+    <color name="glassAccent">#307FDCC4</color>
+    <color name="glassStroke">#33FFFFFF</color>
+    <color name="glassBackground">#15FFFFFF</color>
+
+    <!-- Transparent Overlays -->
+    <color name="scrimLight">#40000000</color>
+    <color name="scrimDark">#80000000</color>
+    <color name="overlayLight">#0D000000</color>
+    <color name="overlayDark">#1A000000</color>
+
+    <!-- Button States -->
+    <color name="buttonDisabled">#E5E7EB</color>
+    <color name="buttonDisabledDark">#374151</color>
+    <color name="buttonPressed">#4CAF8F</color>
+    <color name="buttonPressedDark">#5CC9A5</color>
+
+    <!-- Dividers & Borders -->
+    <color name="dividerLight">#E5E7EB</color>
+    <color name="dividerDark">#374151</color>
+    <color name="borderLight">#D1D5DB</color>
+    <color name="borderDark">#4B5563</color>
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:focusable="false"
+    android:padding="32dp">
+
+    <!-- MindCheck Brain Logo - Top Left Area -->
+    <ImageView
+        android:id="@+id/iconLogo"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_mindcheck_logo"
+        android:contentDescription="MindCheck Icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp" />
+
+    <!-- Title - Left Aligned, Large, Thin Font -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Semua yang\nkamu butuhkan\nuntuk kesehatan\nmental"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_extralight"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="2dp"
+        android:gravity="start|center_vertical"
+        app:layout_constraintTop_toBottomOf="@id/iconLogo"
+        app:layout_constraintBottom_toTopOf="@id/buttonContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Button Container at Bottom - ASYMMETRIC SIZING -->
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="120dp">
+
+        <!-- Secondary Button - Dark Glass (WIDER - 1.5x weight) -->
+        <TextView
+            android:id="@+id/btnSecondary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:layout_weight="1.5"
+            android:text="Pelajari\nlebih lanjut"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:paddingVertical="12dp"
+            android:background="@drawable/bg_glass_button_dark"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Primary Button - Lime Green (NARROWER - 1x weight) -->
+        <TextView
+            android:id="@+id/btnPrimary"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="Mulai →"
+            android:textSize="15sp"
+            android:textColor="#2B3A2B"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:background="@drawable/bg_glass_button_light"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

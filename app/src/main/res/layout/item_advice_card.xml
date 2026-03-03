@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Single advice card for result screen -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_glass_light"
+    android:padding="18dp"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="12dp">
+
+    <!-- Bullet/Checkmark -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="✓"
+        android:textSize="20sp"
+        android:textColor="#B4D96C"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginEnd="14dp" />
+
+    <!-- Advice Text -->
+    <TextView
+        android:id="@+id/tvAdviceText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Pertahankan pola tidur sehat 7-8 jam per malam"
+        android:textSize="14sp"
+        android:textColor="#2B3A2B"
+        android:fontFamily="@font/poppins_regular"
+        android:lineSpacingMultiplier="1.4" />
+
+</LinearLayout>

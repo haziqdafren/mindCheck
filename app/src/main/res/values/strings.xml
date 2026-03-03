@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">MindCheck</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_welcome_title">Selamat Datang di MindCheck</string>
+    <string name="onboarding_welcome_subtitle">Teman kesehatan mental berbasis AI untuk mahasiswa</string>
+    <string name="onboarding_detection_title">Deteksi Dini itu Penting</string>
+    <string name="onboarding_detection_subtitle">Asesmen cepat 2 menit untuk memahami pola kesehatan mental kamu</string>
+    <string name="onboarding_privacy_title">Privasi Kamu Aman</string>
+    <string name="onboarding_privacy_subtitle">Semua data tersimpan lokal di perangkat kamu. Kami tidak pernah membagikan informasi kamu.</string>
+    <string name="onboarding_skip">Lewati</string>
+    <string name="onboarding_next">Selanjutnya →</string>
+    <string name="onboarding_back">← Kembali</string>
+    <string name="onboarding_start">Mulai</string>
+    <string name="onboarding_feature_1">✓ 10 pertanyaan sederhana</string>
+    <string name="onboarding_feature_2">✓ Analisis AI</string>
+    <string name="onboarding_feature_3">✓ Hasil personal</string>
+    <string name="onboarding_badge_1">🔒 Enkripsi end-to-end</string>
+    <string name="onboarding_badge_2">📱 Tersimpan lokal</string>
+    <string name="onboarding_badge_3">🙈 100% anonim</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_greeting">Hai, Mahasiswa! 👋</string>
+    <string name="dashboard_question">Bagaimana perasaan kamu hari ini?</string>
+    <string name="dashboard_screening_title">🧠 Screening Kesehatan Mental</string>
+    <string name="dashboard_screening_subtitle">Asesmen 2 menit tentang kesehatan mental kamu</string>
+    <string name="dashboard_screening_button">Mulai Asesmen →</string>
+    <string name="dashboard_coming_soon">Segera Hadir</string>
+    <string name="dashboard_mood_tracker">📊 Mood Tracker</string>
+    <string name="dashboard_gratitude_journal">📝 Jurnal Syukur</string>
+    <string name="dashboard_wellness_goals">🎯 Target Wellness</string>
+    <string name="dashboard_relaxation">🧘 Relaksasi</string>
+
+    <!-- Screening Form -->
+    <string name="screening_question_label">Pertanyaan %1$d/10</string>
+    <string name="screening_next">Selanjutnya →</string>
+    <string name="screening_back">← Kembali</string>
+    <string name="screening_submit">Kirim</string>
+
+    <!-- Question 1: Gender -->
+    <string name="q1_text">Apa jenis kelamin kamu?</string>
+    <string name="q1_male">Laki-laki</string>
+    <string name="q1_female">Perempuan</string>
+
+    <!-- Question 2: Age -->
+    <string name="q2_text">Berapa usia kamu?</string>
+    <string name="q2_unit">%1$d tahun</string>
+
+    <!-- Question 3: Academic Pressure -->
+    <string name="q3_text">Seberapa besar tekanan akademik yang kamu rasakan?</string>
+    <string name="q3_min">Sangat Rendah</string>
+    <string name="q3_max">Sangat Tinggi</string>
+
+    <!-- Question 4: Study Satisfaction -->
+    <string name="q4_text">Seberapa puas kamu dengan studi kamu saat ini?</string>
+    <string name="q4_min">Sangat Tidak Puas</string>
+    <string name="q4_max">Sangat Puas</string>
+
+    <!-- Question 5: Sleep Duration -->
+    <string name="q5_text">Berapa jam kamu biasanya tidur per malam?</string>
+    <string name="q5_option1">Kurang dari 5 jam</string>
+    <string name="q5_option2">5-6 jam</string>
+    <string name="q5_option3">7-8 jam</string>
+    <string name="q5_option4">Lebih dari 8 jam</string>
+
+    <!-- Question 6: Dietary Habits -->
+    <string name="q6_text">Bagaimana kamu menggambarkan pola makan kamu?</string>
+    <string name="q6_option1">Tidak Sehat (tidak teratur, junk food)</string>
+    <string name="q6_option2">Cukup (cukup seimbang)</string>
+    <string name="q6_option3">Sehat (seimbang, bergizi)</string>
+
+    <!-- Question 7: Suicidal Thoughts -->
+    <string name="q7_text">Apakah kamu pernah memiliki pikiran untuk menyakiti diri sendiri?</string>
+    <string name="q7_option1">Pernah</string>
+    <string name="q7_option2">Tidak Pernah</string>
+    <string name="q7_helper">Jawaban kamu sepenuhnya rahasia</string>
+
+    <!-- Question 8: Study Hours -->
+    <string name="q8_text">Berapa jam kamu belajar per hari rata-rata?</string>
+    <string name="q8_unit">%1$d jam per hari</string>
+
+    <!-- Question 9: Financial Stress -->
+    <string name="q9_text">Seberapa stres kamu tentang masalah keuangan?</string>
+    <string name="q9_min">Tidak Stres</string>
+    <string name="q9_max">Sangat Stres</string>
+
+    <!-- Question 10: Family History -->
+    <string name="q10_text">Apakah ada riwayat gangguan mental dalam keluarga kamu?</string>
+    <string name="q10_option1">Ya</string>
+    <string name="q10_option2">Tidak</string>
+    <string name="q10_helper">Ini membantu kami memahami faktor genetik</string>
+
+    <!-- Loading -->
+    <string name="loading_analyzing">Menganalisis respons kamu…</string>
+    <string name="loading_wait">Mohon tunggu sebentar</string>
+
+    <!-- Result -->
+    <string name="result_close">Tutup</string>
+    <string name="result_no_risk_title">Tidak Ada Risiko Terdeteksi</string>
+    <string name="result_no_risk_subtitle">Berdasarkan respons kamu, kamu menunjukkan pola kesehatan mental yang baik</string>
+    <string name="result_risk_detected_title">Risiko Terdeteksi</string>
+    <string name="result_risk_detected_subtitle">Respons kamu menunjukkan kamu mungkin mengalami gejala depresi</string>
+    <string name="result_confidence">Confidence: %1$d%%</string>
+    <string name="result_advice_title">💡 Rekomendasi</string>
+    <string name="result_important_title">⚠️ Catatan Penting</string>
+    <string name="result_important_note">Ini adalah asesmen awal, bukan diagnosis medis. Konsultasi dengan profesional untuk evaluasi penuh.</string>
+    <string name="result_back_home">Kembali ke Beranda</string>
+
+    <!-- Error Messages -->
+    <string name="error_network_title">Tidak Ada Koneksi Internet</string>
+    <string name="error_network_message">Mohon periksa koneksi internet kamu dan coba lagi</string>
+    <string name="error_api_title">Terjadi Kesalahan</string>
+    <string name="error_api_message">Gagal menghubungi server. Coba lagi nanti.</string>
+    <string name="error_timeout_title">Timeout</string>
+    <string name="error_timeout_message">Server tidak merespons. Coba lagi.</string>
+    <string name="error_validation_title">Input Tidak Valid</string>
+    <string name="error_validation_message">Mohon lengkapi semua pertanyaan</string>
+    <string name="error_retry">Coba Lagi</string>
+    <string name="error_cancel">Batal</string>
+
+    <!-- Common -->
+    <string name="ok">OK</string>
+    <string name="cancel">Batal</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+</resources>

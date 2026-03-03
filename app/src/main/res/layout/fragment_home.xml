@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout halaman beranda dengan ringkasan aktivitas dan fitur cepat -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_onboarding">
+
+    <!-- Konten utama yang dapat di-scroll -->
+    <ScrollView
+        android:id="@+id/scroll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:paddingBottom="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_l">
+
+            <!-- Teks sapaan selamat datang -->
+            <TextView
+                android:id="@+id/tv_greeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hai, Mahasiswa!"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_headline"
+                android:fontFamily="sans-serif-light"
+                android:letterSpacing="-0.02"
+                android:lineSpacingExtra="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xs"
+                android:text="Bagaimana kabar kamu hari ini?"
+                android:textColor="#B3FFFFFF"
+                android:alpha="0.8"
+                android:textSize="@dimen/text_body"
+                android:fontFamily="sans-serif" />
+
+            <!-- Kartu ringkasan hasil screening terakhir -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_last_screening"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_l"
+                android:background="@drawable/bg_card_glass_simple"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="@dimen/radius_l"
+                app:cardElevation="0dp"
+                app:strokeWidth="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_card_glass_simple"
+                    android:padding="@dimen/card_padding">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_small"
+                            android:layout_height="@dimen/icon_small"
+                            android:src="@drawable/ic_brain"
+                            android:contentDescription="Brain Icon"
+                            app:tint="#B4D96C"
+                            android:alpha="0.9" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/spacing_s"
+                            android:text="Screening Terakhir"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif-medium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_s"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_screening_time"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="3 hari lalu"
+                            android:textColor="#B3FFFFFF"
+                            android:alpha="0.7"
+                            android:fontFamily="sans-serif"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_risk_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Risiko Rendah"
+                            android:textColor="#B4D96C"
+                            android:textSize="14sp"
+                            android:fontFamily="sans-serif-medium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_m"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/btn_view_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_button_pill_secondary"
+                            android:text="Detail"
+                            android:textColor="#B4D96C"
+                            android:fontFamily="sans-serif-medium"
+                            android:textSize="13sp"
+                            android:textAllCaps="false"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:minWidth="0dp"
+                            android:minHeight="0dp"
+                            android:elevation="0dp" />
+
+                        <Button
+                            android:id="@+id/btn_screen_again"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_weight="1.2"
+                            android:background="@drawable/bg_button_pill_primary"
+                            android:text="Screening"
+                            android:textColor="@color/darkBackground"
+                            android:fontFamily="sans-serif-medium"
+                            android:textSize="13sp"
+                            android:textAllCaps="false"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:minWidth="0dp"
+                            android:minHeight="0dp"
+                            android:elevation="0dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Bagian aktivitas hari ini -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xl"
+                android:text="Aktivitas Hari Ini"
+                android:textColor="#B4D96C"
+                android:textSize="22sp"
+                android:fontFamily="sans-serif-medium" />
+
+            <!-- Kartu perayaan penyelesaian tugas -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_completion_celebration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_m"
+                android:background="@drawable/bg_card_glass_simple"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="@dimen/radius_l"
+                app:cardElevation="0dp"
+                app:strokeWidth="0dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_card_glass_simple"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🎉"
+                        android:textSize="32sp"
+                        android:layout_marginEnd="12dp" />
+
+                    <TextView
+                        android:id="@+id/tv_completion_message"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Hebat! Mood hari ini sudah dicatat!"
+                        android:textColor="@color/mintGreen"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="14sp"
+                        android:lineSpacingMultiplier="1.3" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_m"
+                android:orientation="horizontal">
+
+                <!-- Kartu pencatatan mood -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_mood"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height_small"
+                    android:layout_marginEnd="@dimen/spacing_s"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_card_glass_simple"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="@dimen/radius_l"
+                    app:cardElevation="0dp"
+                    app:strokeWidth="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_card_glass_simple"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/iv_mood_icon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_mood"
+                            android:contentDescription="Mood Icon"
+                            app:tint="#B4D96C"
+                            android:alpha="0.9" />
+
+                        <TextView
+                            android:id="@+id/tv_mood_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Catat Mood"
+                            android:textColor="#B3FFFFFF"
+                            android:alpha="0.8"
+                            android:fontFamily="sans-serif-medium"
+                            android:textSize="13sp"
+                            android:maxLines="1"
+                            android:ellipsize="none" />
+
+                        <TextView
+                            android:id="@+id/tv_mood_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Belum dicatat"
+                            android:textColor="#80FFFFFF"
+                            android:fontFamily="sans-serif"
+                            android:textSize="10sp"
+                            android:maxLines="1"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Kartu pencatatan tidur -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_sleep"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height_small"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_card_glass_simple"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="@dimen/radius_l"
+                    app:cardElevation="0dp"
+                    app:strokeWidth="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_card_glass_simple"
+                        android:padding="@dimen/spacing_m">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_medium"
+                            android:layout_height="@dimen/icon_medium"
+                            android:src="@drawable/ic_sleep"
+                            android:contentDescription="Sleep Icon"
+                            app:tint="#B4D96C"
+                            android:alpha="0.9" />
+
+                        <TextView
+                            android:id="@+id/tv_sleep_hours"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_xs"
+                            android:text="7.5 jam"
+                            android:textColor="#B3FFFFFF"
+                            android:alpha="0.8"
+                            android:fontFamily="sans-serif"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <!-- Bagian kesehatan mental -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xl"
+                android:text="Kesehatan Mental"
+                android:textColor="#B4D96C"
+                android:textSize="22sp"
+                android:fontFamily="sans-serif-medium" />
+
+            <!-- Kartu fitur screening AI untuk deteksi depresi -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_m"
+                android:background="@drawable/bg_card_glass_simple"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="@dimen/radius_l"
+                app:cardElevation="0dp"
+                app:strokeWidth="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_card_glass_simple"
+                    android:padding="@dimen/card_padding">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_brain"
+                            android:contentDescription="AI Brain Icon"
+                            app:tint="#B4D96C"
+                            android:alpha="0.95" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/spacing_s"
+                            android:text="AI Screening Depresi"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"
+                            android:fontFamily="sans-serif-medium" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_s"
+                        android:text="Deteksi dini risiko depresi dengan teknologi AI"
+                        android:textColor="#B3FFFFFF"
+                        android:alpha="0.85"
+                        android:fontFamily="sans-serif"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/btn_start_screening"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/button_height_large"
+                        android:layout_marginTop="@dimen/spacing_m"
+                        android:background="@drawable/bg_button_pill_primary"
+                        android:paddingStart="@dimen/spacing_l"
+                        android:paddingEnd="@dimen/spacing_l"
+                        android:text="Mulai Asesmen →"
+                        android:textColor="@color/darkBackground"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="16sp"
+                        android:elevation="0dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Bagian alat-alat wellness -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xl"
+                android:text="Alat Wellness"
+                android:textColor="#B4D96C"
+                android:textSize="22sp"
+                android:fontFamily="sans-serif-medium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_m"
+                android:orientation="horizontal">
+
+                <!-- Kartu latihan pernapasan -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_breathing"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height_small"
+                    android:layout_marginEnd="@dimen/spacing_s"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_card_glass_simple"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="@dimen/radius_l"
+                    app:cardElevation="0dp"
+                    app:strokeWidth="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_card_glass_simple"
+                        android:padding="@dimen/spacing_m">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_medium"
+                            android:layout_height="@dimen/icon_medium"
+                            android:src="@drawable/ic_breathing"
+                            android:contentDescription="Breathing Icon"
+                            app:tint="#B4D96C"
+                            android:alpha="0.9" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_xs"
+                            android:text="Pernapasan"
+                            android:textColor="#B3FFFFFF"
+                            android:alpha="0.8"
+                            android:fontFamily="sans-serif"
+                            android:textSize="14sp"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Kartu bantuan darurat -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_emergency"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height_small"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/errorRed"
+                    app:cardCornerRadius="@dimen/radius_l"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/spacing_m">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_medium"
+                            android:layout_height="@dimen/icon_medium"
+                            android:src="@drawable/ic_emergency"
+                            android:contentDescription="Emergency Icon"
+                            app:tint="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_xs"
+                            android:text="Darurat"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:fontFamily="sans-serif-medium"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <!-- Indikator konsistensi berturut-turut -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_l"
+                android:layout_marginBottom="@dimen/spacing_l"
+                android:background="@drawable/bg_card_glass_simple"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="@dimen/radius_l"
+                app:cardElevation="0dp"
+                app:strokeWidth="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/bg_card_glass_simple"
+                    android:padding="@dimen/spacing_m"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_small"
+                        android:layout_height="@dimen/icon_small"
+                        android:src="@drawable/ic_streak"
+                        android:contentDescription="Streak Icon"
+                        app:tint="#B4D96C" />
+
+                    <TextView
+                        android:id="@+id/tv_streak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/spacing_s"
+                        android:text="Streak: 7 hari berturut-turut!"
+                        android:textColor="#B4D96C"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Skeleton loading saat memuat data -->
+    <ViewStub
+        android:id="@+id/skeleton_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/skeleton_home" />
+
+</FrameLayout>
